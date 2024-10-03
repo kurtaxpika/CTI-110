@@ -1,0 +1,58 @@
+ # LaRicia Leach
+
+ # 10/03/2024
+
+ # P2HW1
+
+ # This program calculates and displays travel expenses!
+
+
+#  Display first message !!
+
+print("This program calculates and displays travel expenses!")
+
+
+print()
+print("★" * 76)
+print()
+
+# budget
+print()
+budget = int(input(f"໑ Enter your budget:" ))
+
+# travel destination 
+print()
+travel_destination = str(input(f"❀ Enter your travel destination:" ))
+
+# gas
+print()
+gas = int(input("⭑⚝ How much do you think you'll spend on gas?"))
+accommondation = int(input(f"⭑⚝ Approximately, how much will you need for accommondation/hotel?" ))
+food= int(input(f"⭑⚝ Last, how much do you need for food?" ))
+
+
+# declaring the integer + setting the expenses !!
+expenses= gas + accommondation + food
+
+# result !!
+result = budget - expenses
+
+# Display travel expenses
+
+print()
+print()
+print(" ദ്ദി ˉ͈̀꒳ˉ͈́ )✧ ------- Travel expenses ------- ( ˶ˆᗜˆ˵ )!!")
+print(".☘︎ ݁˖Location:", travel_destination)
+print("°❀⋆.ೃ࿔* Initial Budget:", budget)
+print()
+print("⋆⭒˚｡⋆ Fuel:", gas)
+print()
+print("₍⑅ᐢ..ᐢ₎ Accommondation:", accommondation)
+print()
+print("⋆˚✿˖° Food:", food)
+print()
+print("୭ ˚. ᵎᵎ Remaining Balance:", result)
+
+
+
+
