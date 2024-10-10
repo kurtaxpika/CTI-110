@@ -1,0 +1,46 @@
+# In-class example in dictionaries
+
+# Create a dictionary
+blue_boy = {"centaurea_color":"blue", "price":32.98, "max_height":38, "is_annual":True}
+
+# Get value, given the key
+print(f"${blue_boy['price']:.2f}")
+
+
+# Get another value, given the key
+print(f"Is the centaurea cyanus annual? {blue_boy['is_annual']}")
+
+print(blue_boy['centaurea_color'])
+
+
+# Add a key value pair
+blue_boy["water_needed"] = "4 oz per day"
+
+#Print the entire dictionary
+print(blue_boy)
+
+#Add a key value pair
+blue_boy.update({"leaf_color":"green", "sun_needed":6})
+
+
+print("\n\n")
+#Print the entire dictionary
+print(blue_boy)
+
+#Remove from dictionary
+del blue_boy['max_height']
+
+print("\n\n")
+#Print the entire dictionary
+print(blue_boy)
+
+print()
+# Print all keys in dictionary
+print(blue_boy.keys())
+
+# Ask user to give a key in the dictionary
+answer = input("Enter a key from the dictionary: ")
+
+# Give the value associated with user's answer
+
+print(f"The value for {answer} is {blue_boy[answer]}")
