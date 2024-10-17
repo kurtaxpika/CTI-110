@@ -1,0 +1,40 @@
+# Display This program calculates and displays travel expenses
+
+print("This program calculates and displays travel expenses")
+ 
+# Get info for budget
+
+print()
+budget = int(input("໑ Enter budget: "))
+
+# Get info for travel
+print()
+travel_destination = str(input("❀ Enter travel destination: "))
+
+# Get infor for hotel, gas, and food
+print()
+gas = int(input("໑ How much do you think you will spend on gas? "))
+hotel = int(input("໑ Approximately, how much will you need for accomodation/hotel? "))
+food = int(input("໑ Lastly, how much do you need for food? "))
+
+# Calculate expenses
+
+expenses = gas + hotel + food
+
+# Display 
+print()
+print()
+print("---------Travel Expenses----------")
+print()
+print()
+
+
+result = budget - expenses
+
+print(f"{'Location:':<20}{travel_destination:}")
+print(f"{'Initial Budget:':<20}${budget:,.2f}")
+print(f"{'Fuel:':<20}${gas:,.2f}")
+print(f"{'Hotel:':<20}${hotel:,.2f}")
+print(f"{'Food:':<20}${food:,.2f}")
+print("-" * 10)
+print(f"{'Remaining balance:':<20}${result:,.2f}")
