@@ -1,0 +1,35 @@
+# The program should store the grades entered in a list. Give the list created a descriptive name 
+
+num1 = float(input("Enter grade for Module 1: "))
+num2 = float(input("Enter grade for Module 2: "))
+num3 = float(input("Enter grade for Module 3: "))
+num4 = float(input("Enter grade for Module 4: "))
+num5 = float(input("Enter grade for Module 5: "))
+num6 = float(input("Enter grade for Module 6: "))
+
+# Create the list with the values in it
+numbers = [num1, num2, num3, num4, num5, num6]
+
+print(numbers)
+
+
+print("-------Results------")
+# Functions use lists
+
+# Get the lowest value in the list
+print(f"{'Lowest grade':<20}{min(numbers)}")
+
+
+# Get the highest value in the list
+print(f"{'Highest grade':<20}{max(numbers)}")
+
+# Get the sum of all values in the list
+print(f"{'Sum of grades':<20}{sum(numbers)}")
+
+# Get the average
+average = sum(numbers)/len(numbers)
+
+# Display average
+print(f"{'Average':<20} {average:.2f}")
+
+print("-------------")
