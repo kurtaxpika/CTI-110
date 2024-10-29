@@ -1,0 +1,62 @@
+Declare Integer widgetsSold, widgetsReturned, net_widgets_sold 
+
+Declare Real widget_sales_amount, commission_amount, comm_rate, salary 
+
+Constant Real WIDGET_PRICE = 4.79, BASE_SALARY = 2000 
+
+Declare String name 
+
+  
+
+Display (“Enter salesperson’s name:  ”) 
+
+Input name 
+
+Display (“Enter the number of widgets sold: ”) 
+
+Input widgetsSold 
+
+Display (“Enter the number of widgets returned: ”) 
+
+Input widgetsReturned 
+
+  
+
+Set net_widgets_sold = widgetsSold – widgetsReturned 
+
+Set widget_sales_amount = net_widgets_sold - WIDGET_PRICE 
+
+Set commission_amount = comm_rate * widget_sales_amount 
+
+Set Salary = commission_amount + BASE_SALARY 
+
+  
+
+if net_widgets_sold <= 100 
+
+Set comm_rate = .1 
+
+Else if net_widgets_sold <= 200 
+
+Set comm_rate = .15 
+
+Else if net_widgets_sold <= 100 
+
+Set comm_rate = .2 
+
+Else 
+
+Set comm_rate = .25 
+
+  
+
+Display (“Sales person: “ + name) 
+Display (“Net Widgets Sold: “ + net_widgets_sold) 
+
+Display (“Widgets Sales Amount: “ + widget_sales_amount) 
+
+Display (“Commission Amount: “ + commission_amount) 
+
+Display (“Monthly Salary: “ + salary) 
+
+ 
