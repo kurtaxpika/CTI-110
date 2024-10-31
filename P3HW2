@@ -1,0 +1,45 @@
+If hours is greater than 40 (employees has OT)
+    total hours worked is the variable hours (optional)
+    (don't have to create pay rate, it already exists)
+    create a variable (ot)  that holds only the OT hours (hours - 40)
+     create a variable for OT_pay_rate (pay_rate * 1.5)
+    calculate pay for OT hours (OT * OT_pay_rate)
+    calculate regular pay (pay_rate * 40)
+    Calculate gross pay (pay for OT + regular pay)
+else (NO OT- hours has to be 40 or less)
+    create a variable (ot)  that holds only the OT hours WHICH IS ZERO
+    calculate pay for OT hours WHICH IS ZERO
+    calculate regular pay (pay_rate * hours)
+    Calculate gross pay (same as regular pay)
+
+Display the line of strings with width specifiers
+print(f"{'Hours Worked':<20}{'Pay Rate':<20}")
+print(f"{'hours':<20}${'pay rate':<20.2f}")    
+'''
+
+# Variables for getting info on employer
+
+name = input("Enter employee's name:")
+hours = float(input("Enter  number of hours worked:"))
+pay_rate = float(input("Enter employee's pay rate:"))
+print("----------------------------------------------")
+print(f"Employee name: {name}")
+# Calculate pay
+
+if hours > 40:
+    OT = hours - 40
+    regular_pay = 40 * pay_rate
+    OT_pay_rate = pay_rate * 1.5
+    OT_pay = OT * OT_pay_rate
+    gross_pay = OT_pay + regular_pay
+else:
+    OT = 0
+    OT_pay = 0
+    regular_pay = pay_rate * hours
+    gross_pay = regular_pay
+
+# Display the rest of the information
+
+print(f"{'Hours Worked':<20}{'Pay Rate':<20}{'OverTime':<20}{'OverTime Pay':<20}{'RegHour Pay':<20}{'Gross Pay':<20}")
+print("----------------------------------------------------------------------------------------------------------------")
+print(f"{hours:<20}{pay_rate:<20}{OT:<20}{OT_pay:<20}${regular_pay:<20.2f}${gross_pay:<20.2f}")
