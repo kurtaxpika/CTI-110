@@ -1,0 +1,15 @@
+# LaRicia Leach
+# 11/4/2024
+# P4LAB2
+# Use loops to show only positive time tables
+
+run_again  =  "yes"
+
+while runagain != "no":
+    # Get an integer from user
+    # If integer is zero or higher, show times table
+    #use a loop to show times table
+    print("Show times tablle if user enters positive integer")
+    # If integer is negative, tell user no can do
+    run_again = input("Would you like to run the program again? ")
+print("Program has ended...")
