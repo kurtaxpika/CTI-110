@@ -1,0 +1,21 @@
+# 11/7/2024
+# P4LAB1
+# Draw a square and triangle using turtle key 
+
+
+# make turtle
+import turtle
+win = turtle.Screen()
+t = turtle.Turtle()
+win.bgcolor("cyan")
+
+t.pensize(10)               #increase pensize
+t.pencolor("white")         #set pen color 
+t.shape("arrow")
+
+
+# For loop to draw a triangle
+for tr in range (0,3):
+    t.left(120)
+    t.forward(200)
+print("For a loop has ended")
