@@ -43,3 +43,53 @@ for tr in range (0,3):
     t.left(120)
     t.forward(200)
 print("For a loop has ended")
+
+# LaRicia Leach
+# 11/7/2024
+# P4LAB1B
+# Make my initials using turtle
+
+
+# make turtle
+import turtle
+win = turtle.Screen()
+t = turtle.Turtle()
+win.bgcolor("cyan")
+
+t.pensize(10)               #increase pensize
+t.pencolor("white")         #set pen color 
+t.shape("arrow")
+
+
+
+
+# make turtle
+import turtle
+win = turtle.Screen()
+t = turtle.Turtle()
+win.bgcolor("cyan")
+
+t.pensize(10)               #increase pensize
+t.pencolor("white")         #set pen color 
+t.shape("arrow")
+
+
+# Drawing the 1st initial
+t.penup()
+t.goto(-200,100)
+t.pendown()
+t.right(90)
+t.forward(320)
+t.right(-90)
+t.forward(180)
+t.penup()
+
+# Drawing the 2nd initial
+t.goto(200,100)
+t.penup()
+t.pendown()
+t.right(90)
+t.forward(320)
+t.right(-90)
+t.forward(180)
+t.penup()
