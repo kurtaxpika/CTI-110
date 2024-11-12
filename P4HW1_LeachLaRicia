@@ -1,0 +1,30 @@
+ # LaRicia Leach
+
+ # 11/17/24
+
+# P4HW1
+
+#  The program will use a loop. Also, after displaying score average (after dropping lowest score) , the program is to display a letter grade for the calculated average.
+
+
+# Get number of items to purchase
+numModules = int(input("How many scores do you want to enter? "))
+
+
+# Empty list to hold valid responses
+cart = []
+
+# Loop to get the items
+for score in range(numModules):
+    grade = input(F"Enter grade #{score +1}: ")
+    # Loop to ensure thisItem is in avaliableItems
+    while grade < 0
+        print("INVALID Score entered!!!!")
+        print("Score should be between 0 and 100")
+    # Add the valid item to the cart 
+    cart.append(thisItem)
+
+# Loop to print each item in the cart
+print("Items we purchased are: ")
+for product in cart:
+    print(product)
