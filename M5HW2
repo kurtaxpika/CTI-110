@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+public class M5HW2_LLeach {
+public static void main(String[] args) {
+    Scanner k = new Scanner(System.in);
+        // variables
+        String choice = "yes";
+        while (choice.equalsIgnoreCase("yes"))
+        {
+            final double PRICE = 4.79, Salary = 2000;
+            int widgetsSold, widgetsReturned, totWidgetsSold = 0, totWidgetsReturned = 0, weeks = 4, i;
+            // for loop for widgets sold
+            for(i = 1;i <= weeks; i++)
+            {
+                System.out.print("Enter Widgets sold for week #" + i + ": ");
+                widgetsSold = k.nextInt();
+                totWidgetsSold += widgetsSold;
+            }
+            System.out.println("Total Widgets Sold: " + totWidgetsSold);
+            // widgets returned for loop
+            for(i = 1;i <= weeks; i++)
+            {
+                System.out.print("Enter Widgets returned for week #" + i + ": ");
+                widgetsReturned = k.nextInt();
+                totWidgetsReturned += widgetsReturned;
+            }
+            System.out.println("Total Widgets Returned: " + totWidgetsSold);
+                //
+                for(i = 1;i <= weeks; i++)
+                {
+                    System.out.print("Enter Net widgets sold for week #" + i + ": ");
+                    widgetsReturned = k.nextInt();
+                    totWidgetsReturned += widgetsReturned;
+                }
+                System.out.println("Total Net Widgets Sold: " + totWidgetsSold);
+                //
+                for(i = 1;i <= weeks; i++)
+                {
+                    System.out.print("Enter widgets sales amount sold week #" + i + ": ");
+                    widgetsReturned = k.nextInt();
+                    totWidgetsReturned += widgetsReturned;
+                }
+                System.out.println("Total Net Widgets Sold: " + totWidgetsSold);
+            System.out.println();
+            System.out.println();
+            System.out.print("Would you like to run the program again? Enter yes or no: ");
+            choice = k.next();
+        }
+        k.close();
+        System.out.println();
+        System.out.println("Program has exited!");
+}
+    
+}
