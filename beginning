@@ -1,0 +1,21 @@
+# Using functions in python
+
+# Define a function that adds numbers
+def add_numbers(num1, num2, num3):
+    result = num1 + num2 + num3
+    print(f"*********{result}**********")
+   
+
+
+
+def main():
+    # Main logic goes here
+    print("The main is running...")
+    # Call the add_numbers function
+    add_numbers(1,4,5)
+    add_numbers(0,0,0)
+
+
+# Call the main function
+if __name__ == "__main__":
+    main()
