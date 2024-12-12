@@ -107,7 +107,7 @@ public class M7HW1_Leach
     public static void displayValues(int widgetsSold, int widgetsReturned, int netWidgetsSold, double widgetsSalesAmount, double commissionAmount, double monthlySalary)
     {
         System.out.println();
-        System.out.println("Sales Person: Dylan Makombe");
+        System.out.println("Sales Person: LaRicia Leach");
         System.out.println("Widgets Sold: " + widgetsSold);
         System.out.println("Widgets Returned: " + widgetsReturned);
         System.out.println("Net Widgets Sold: " + netWidgetsSold);
