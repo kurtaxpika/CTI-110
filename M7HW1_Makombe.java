@@ -1,8 +1,8 @@
 /**
- * M7HW1_Makombe
+ * M7HW1_Leach
  */
 import java.util.Scanner;
-public class M7HW1_Makombe
+public class M7HW1_Leach
 {
 
     public static void main(String[] args) 
@@ -34,7 +34,7 @@ public class M7HW1_Makombe
     public static void displayInfo()
     {
         System.out.println();
-        System.out.println("Dylan Makombe");
+        System.out.println("LaRicia Leach");
         System.out.println();
         System.out.println("M7HW1 solution");
         System.out.println();
