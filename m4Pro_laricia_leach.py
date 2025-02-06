@@ -1,4 +1,4 @@
-# LaRicia
+# LaRicia Leach
 # 02/01/2025
 # M4 Pro
 # More details on tuition
