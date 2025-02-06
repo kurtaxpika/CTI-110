@@ -1,4 +1,4 @@
-# Dylan Makombe
+# LaRicia
 # 02/01/2025
 # M4 Pro
 # More details on tuition
@@ -22,7 +22,7 @@ students = {
 
 
 def display_menu(): 
-    # Display options that user can select from
+    # Displays options that a user can select from
     print("\n\n")
     print("---------------Menu---------------")
     print("1) Display Course Information")
@@ -52,14 +52,14 @@ def lookup_course():
     else:
         print("Course not found. Please check the code and try again.")
 
-# Function that lets you select a Student
+# Fuction that selects a Student
 def choose_student():
     for s in range(len(stu_names)):
         print(f"{s+1} {stu_names[s]}")
     student_choice = int(input("Choose a Student: "))
     return stu_names[student_choice-1]
 
-# Function displays student's total tuition
+# Function that displays a student's total tuition
 def cal_total_tuition():
     print(f"{'Stu Name':<15} {'#Of Courses':<12}{'Tuition':<10}")
     print(f"-" * 45)
